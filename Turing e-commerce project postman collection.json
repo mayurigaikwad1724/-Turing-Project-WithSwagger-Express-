@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "18b9d935-57b9-4985-b23b-5d0b090ec332",
+		"name": "4th_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20427719"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "localhost:8000/department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/department"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/get_by_id/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/get_by_id/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "localhost:8000/category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/category"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/category_id/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/category_id/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/product_id/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/product_id/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/category_department_id/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/category_department_id/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "attribute",
+			"item": [
+				{
+					"name": "localhost:8000/attribute_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/attribute_id"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/attribute_by_id/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/attribute_by_id/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/attributevalue/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/attributevalue/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/attribute/inProduct//2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/attribute/inProduct/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "localhost:8000/product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/product"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/search?query_string=1&page=1&limit=1&description_length=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/products/search?query_string=1&page=1&limit=1&description_length=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query_string",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "description_length",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/product/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/product/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/inCategory/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/products/inCategory/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/inDepartment/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/products/inDepartment/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/details/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/products/details/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/locations/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/products/locations/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/products/2/reviews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer_id\":1,\n    \"product_id\":1,\n    \"review\":5,\n    \"rating\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/products/2/reviews"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "localhost:8000/customers_signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"kiyo\",\n    \"email\":\"kiyo20@navgurukul.org\",\n    \"password\":\"kiyo@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/customers_signup"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/customers_login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"kiyo20@navgurukul.org\",\n    \"password\":\"kiyo@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/customers_login"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/put_customers/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"gayatri\",\n    \"email\":\"gayatri20@navgurukul.org\",\n    \"password\":\"Gayatri@123\",\n    \"day_phone\":\"+4556778903\",\n    \"eve_phone\":\"+34567892345\",\n    \"mob_phone\":\"+236789123454\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/put_customers/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/upadte_address/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address_1\":\"1\",\n    \"address_2\":\"2\",\n    \"city\":\"malshiras\",\n    \"region\":\"hindu\",\n    \"postal_code\":\"2345\",\n    \"country\":\"indian\",\n    \"shipping_region_id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/upadte_adreess/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shppingcart",
+			"item": [
+				{
+					"name": "localhost:8000/shoppingcart/genrateUniqueId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/shppingcart/genrateUniqueId"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"2\",\n    \"product_id\":\"4\",\n    \"attributes\":\"3\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/add"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/update/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/update/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/empty/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/empty/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/moveToCart/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/moveToCart/1"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/totalAmount/2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/totalAmount/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shoppingcart/removeProduct/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":\"4\",\n    \"product_id\":\"7\",\n    \"attributes\":\"10\",\n    \"quantity\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8000/shoppingcart/removeProduct/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tax",
+			"item": [
+				{
+					"name": "localhost:8000/tax",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/tax"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/tax/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/tax/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shipping",
+			"item": [
+				{
+					"name": "localhost:8000/shipping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/shipping"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/shipping/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8000/shipping/2"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
